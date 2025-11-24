@@ -1,0 +1,38 @@
+{
+  "name": "zenith-pulse-arena",
+  "version": "1.0.0",
+  "description": "FHE-powered lottery pool using Zama fhEVM - encrypted number picks with on-chain random winner selection",
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.js",
+    "deploy:sepolia": "hardhat run scripts/deploy.js --network sepolia",
+    "seed": "hardhat run scripts/seed-rounds.js",
+    "seed:sepolia": "hardhat run scripts/seed-rounds.js --network sepolia",
+    "test": "hardhat test",
+    "clean": "hardhat clean"
+  },
+  "keywords": [
+    "fhe",
+    "lottery",
+    "privacy",
+    "ethereum",
+    "smart-contracts",
+    "zama",
+    "fhevm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@fhevm/hardhat-plugin": "0.3.0-1",
+    "@fhevm/solidity": "0.9.1",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.26.3"
+  },
+  "dependencies": {
+    "@fhevm/solidity": "0.9.1",
+    "@zama-fhe/relayer-sdk": "0.3.0-5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.4"
+  }
+}
